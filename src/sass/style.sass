@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,600;0,700;1,900&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Montserrat:ital,wght@0,600;0,700;1,900&family=Open+Sans:wght@400;700&display=swap)
 $primery:#275553
 $secondary:#F47648
 $white: #FFFFFF
@@ -6,7 +6,115 @@ $black: #212121
 $dark-gray: #5A5A5A
 $gray: #BABABA
 @mixin section-title
-    
-    
-
-    
+    font-family: 'Inter'
+    font-size: 48px
+    font-weight: 700
+    text-align: left
+@mixin main-text
+    font:
+        family: 'Open Sans'
+        style: normal
+        size: 16px
+        weight: 400
+*
+    margin: 0 auto
+a
+    text-decoration: none
+img
+    margin: 0
+p
+    margin: 0
+ul
+    list-style: none
+    padding: 0
+.main-content::before
+    z-index: -1
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url('../img/main-banner.png')
+    background-repeat: no-repeat
+    background-size: 100%
+.container
+    margin: 0 
+.header-nav
+    padding-top: 35px
+.header-nav_items
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: flex-end
+    margin-right: 98px
+    margin-left: 98px
+    margin-top: 11px
+    color: $primery
+    @include main-text
+.header-nav_item
+    padding-right: 56px
+    justify-content: space-between
+    margin: 0
+.logo-head
+    text-align: left
+.main-cta
+    margin-left: 98px
+.header-nav_logo
+    margin-left: 98px
+    float: left
+.reservation
+    border: 1px $primery solid
+    padding: 11px 32px
+    border-radius: 5px
+    color: $primery
+h1
+    padding-top: 88px
+    font: 
+        family: 'Inter'
+        style: normal
+        size: 64px
+        weight: 900
+    color: $white
+.main-cta
+    max-width: 616px
+.main-cta_caption
+    font: 
+        family: 'Montserrat'
+        style: normal
+        size: 30px
+        weight: 900
+    color: $white
+    background-color: $secondary
+    padding: 2px 24px
+    max-width: 481px
+    border-radius: 16px
+    text-align: center
+    margin-top: 25px
+.main-cta_descr
+    @include main-text
+    font-size: 20px
+    color: $white
+    padding-top: 40px
+    padding-bottom: 40px
+.timetable
+    @include main-text
+    color: $white
+    font-size: 18px
+    text-decoration-line: underline
+    text-underline-offset: 6px
+    position: relative
+    padding-bottom: 40px
+    padding-top: 40px
+.timetable::before
+    content: ''
+    width: 64px
+    height: 64px
+    background-image: url('../icons/arrow-btn.svg')
+    background-repeat: no-repeat
+    position: absolute
+    left: 157px
+    top: 20px
+.main-social_btn
+    margin-left: 98px
+    margin-top: 170px
+.main-facebook
+    padding-right: 25px
