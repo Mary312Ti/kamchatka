@@ -162,9 +162,9 @@ h1
     background-repeat: no-repeat
     position: absolute
     width: 100%
-    height: 325%
+    height: 340%
     background-size: 100%
-    top: 150%
+    top: 130%
 .start-level
     position: relative
 .start-level::before
@@ -239,7 +239,6 @@ h1
     color: $white
     max-width: 550px
 .day-one_container
-    margin-left: 0
     margin-left: 98px
     text-align: left
 .day-one_descr-container
@@ -256,3 +255,104 @@ h1
 .main-bold
     color: $white
     font-weight: 700
+.day-two_container
+    margin-top: 300px
+    margin-left: 98px
+    text-align: left
+    padding-top: 200px
+.day-two-caption
+    @include section-title
+    max-width: 813px
+    margin: 0
+.day-two_descr-1
+    @include main-text
+    max-width: 548px
+    margin: 0
+    padding-top: 48px
+.day-two-descr-1_1
+    padding-bottom: 45px
+.day-two_descr-2
+    @include main-text
+    max-width: 478px
+    text-align: left
+    margin-bottom: 150px
+    margin-right: 98px
+    margin-left: 65%
+    margin-top: 168px
+.day-two::before
+    content: ''
+    z-index: -1
+    background-image: url('../img/day-two.png')
+    background-repeat: no-repeat
+    position: absolute
+    width: 100%
+    height: 100%
+    background-size: 60%
+    background-position: right top
+    top: 380%
+.underline-black
+    color: $black
+.waiting
+    background-color: #F1F1F1
+.waiting_caption
+    @include section-title
+    padding-top: 80px
+.waiting_container
+    margin-left: 98px
+    margin-right: 98px
+.waiting_cart-items
+    padding-top: 48px
+    padding-bottom: 80px
+    display: flex
+.waiting_cart-item
+    max-width: 288px
+    max-height: 373px
+    background-color: $white
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+.waiting_card-caption
+    padding: 8px 24px 0
+    font:
+        family: 'Montserrat'
+        style: normal
+        weight: 700
+        size: 18px
+.waiting_cart-descr
+    padding: 8px 24px 27px
+    @include main-text
+    font-size: 14px
+    max-width: 245px
+.day-three::before
+    content: ''
+    z-index: -1
+    background-image: url('../img/day-three-six.png')
+    background-repeat: no-repeat
+    position: absolute
+    width: 100%
+    height: 100%
+    background-size: 100%
+    top: 560%
+.day-three
+    max-width: auto
+    max-height: auto
+.day-three_container
+    margin-left: 98px
+    margin-right: 98px
+    padding-right: 33px
+    position: absolute
+    right: 0
+.day-three_caption
+    margin: 0
+    @include section-title
+    padding-top: 80px
+    padding-bottom: 48px
+    max-width: 501px
+.day-three_descr-1,
+.day-three_descr-2,
+.day-three_descr-3
+    @include main-text
+    padding-bottom: 50px
+    max-width: 501px
+.day-four_container
+    margin-left: 98px
+    margin-right: 98px
